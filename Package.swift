@@ -3,23 +3,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "Toolbelt",
+    name: "ToolbeltPackage",
     platforms: [
         .iOS(.v13),
         .macOS(.v13)
     ],
     products: [
         .library(
-            name: "Toolbelt",
+            name: "ToolbeltLibrary",
             type: .dynamic,
             targets: [
-                "Toolbelt",
+                "ToolbeltTarget",
             ]
         ),
     ],
     targets: [
         .target(
-            name: "Toolbelt"
+            name: "ToolbeltTarget"
         ),
     ]
 )
