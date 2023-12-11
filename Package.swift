@@ -5,13 +5,13 @@ import PackageDescription
 let package = Package(
     name: "Toolbelt",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v15),
     ],
     products: [
         .library(
             name: "Toolbelt",
             targets: [
-                "Toolbelt"
+                "Toolbelt",
             ]
         ),
     ],

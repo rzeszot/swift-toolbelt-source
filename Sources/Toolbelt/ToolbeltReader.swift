@@ -33,7 +33,7 @@ public extension ToolbeltReader {
     }
 }
 
-struct ToolbeltReader_Previews: PreviewProvider {
+#Preview {
     struct Preview: View {
         @State var enabled = true
 
@@ -66,15 +66,5 @@ struct ToolbeltReader_Previews: PreviewProvider {
         }
     }
 
-    static var previews: some View {
-        Preview()
-    }
+    return Preview()
 }
-
-
-//    public static func enabled(@ViewBuilder content: @escaping (Bool) -> Content)) -> some View {
-//        ToolbeltReader { enabled in
-//
-//
-//        }
-//    }
