@@ -33,38 +33,38 @@ public extension ToolbeltReader {
     }
 }
 
-#Preview {
-    struct Preview: View {
-        @State var enabled = true
-
-        var body: some View {
-            HStack {
-                VStack(alignment: .leading) {
-                    ToolbeltReader { value in
-                        Text(verbatim: "value " + (value ? "enabled" : "disabled"))
-                    }
-                    ToolbeltReader.if(enabled: true) {
-                        Text(verbatim: "if true")
-                    }
-                    ToolbeltReader.if(enabled: false) {
-                        Text(verbatim: "if false")
-                    }
-                    ToolbeltReader.enabled {
-                        Text(verbatim: "enabled")
-                    }
-                    ToolbeltReader.disabled {
-                        Text(verbatim: "disabled")
-                    }
-                }
-                Spacer()
-                Button("Toggle") {
-                    enabled.toggle()
-                }
-            }
-            .padding()
-            .toolbelt(enabled)
-        }
-    }
-
-    return Preview()
-}
+//#Preview {
+//    struct Preview: View {
+//        @State var enabled = true
+//
+//        var body: some View {
+//            HStack {
+//                VStack(alignment: .leading) {
+//                    ToolbeltReader { value in
+//                        Text(verbatim: "value " + (value ? "enabled" : "disabled"))
+//                    }
+//                    ToolbeltReader.if(enabled: true) {
+//                        Text(verbatim: "if true")
+//                    }
+//                    ToolbeltReader.if(enabled: false) {
+//                        Text(verbatim: "if false")
+//                    }
+//                    ToolbeltReader.enabled {
+//                        Text(verbatim: "enabled")
+//                    }
+//                    ToolbeltReader.disabled {
+//                        Text(verbatim: "disabled")
+//                    }
+//                }
+//                Spacer()
+//                Button("Toggle") {
+//                    enabled.toggle()
+//                }
+//            }
+//            .padding()
+//            .toolbelt(enabled)
+//        }
+//    }
+//
+//    return Preview()
+//}

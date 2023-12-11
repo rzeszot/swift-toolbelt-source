@@ -5,11 +5,13 @@ import PackageDescription
 let package = Package(
     name: "Toolbelt",
     platforms: [
-        .iOS(.v15),
+        .iOS(.v13),
+        .macOS(.v13)
     ],
     products: [
         .library(
             name: "Toolbelt",
+            type: .dynamic,
             targets: [
                 "Toolbelt",
             ]
