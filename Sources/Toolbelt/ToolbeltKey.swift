@@ -1,5 +1,11 @@
 import SwiftUI
 
 struct ToolbeltKey: EnvironmentKey {
-    static let defaultValue: Bool = false
+    static var defaultValue: Bool {
+        #if DEBUG
+            true
+        #else
+            false
+        #endif
+    }
 }
